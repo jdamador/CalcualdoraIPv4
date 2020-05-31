@@ -5,9 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="grid-dialog">
+        <div id="input-ip">
+            <div class="center-div">
+                <div class="center">
+                    <div class="inputs">
+                        <h2>Dirección IPv4</h2>
+                        <form class="form-inline">
+                            <input type="number" class="form-control input-style" name="first-input" id="first-input" placeholder="0 - 255">
+                            <input type="number" class="form-control input-style" name="second-input" id="second-input" placeholder="0 - 255">
+                            <input type="number" class="form-control input-style" name="third-input" id="third-input" placeholder="0 - 255">
+                            <input type="number" class="form-control input-style" name="fourth-input" id="fourth-input" placeholder="0 - 255">
+                        </form>
+
+                    </div>
+                    <div class="input-body">
+                        <button type="button" class="btn btn-success" onclick="mainShowInformation()">Buscar</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="result-ip-one">
+            <div class="list-results">
+                <ul class="list-group list-group-flush " style="width: 500px;">
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Clase</strong> </h2>
+                        </div>
+                        <div >
+                            <h3 id="result-class"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Máscara de Red</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-mask"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Dirección de Red</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-net"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>BroadCast</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-broadcast"></h3>
+                        </div>  
+                    </li>
+                  </ul>
+            </div>
+
+        </div>
+        <div id="result-ip-two">
+            <div class="list-results">
+                <ul class="list-group list-group-flush " style="width: 500px;">
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Primera Dirección</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-first-dir"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Última Dirección</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-last-dir"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Bits Host</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-bits-host"></h3>
+                        </div>  
+                    </li>
+                    <li class="list-group-item block-container" style="display: inline;"> 
+                        <div>
+                            <h2> <strong>Bits Red</strong> </h2>
+                        </div>
+                        <div>
+                            <h3 id="result-bits-net"></h3>
+                        </div>  
+                    </li>
+                  </ul>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
