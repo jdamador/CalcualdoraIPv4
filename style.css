@@ -1,69 +1,75 @@
-body, html{
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    background: burlywood !important;
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background: burlywood !important;
 }
-.grid-dialog{
-    display: inline-grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 0.5fr 0.5;
-    grid-template-rows: 0.3fr 0.7fr;
-    column-gap: 5px;
-    row-gap: 5px;
-    grid-template-areas: "input-ip input-ip" "result-ip-one result-ip-two";
-    text-align: center;
-}
-
-#input-ip{
-    grid-area: input-ip;
-    vertical-align: middle;
-    
+.grid-dialog {
+  display: inline-grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 0.5fr 0.5;
+  grid-template-rows: 0.3fr 0.7fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas: "input-ip input-ip" "result-ip-one result-ip-two";
+  text-align: center;
 }
 
-#result-ip-one{
-    grid-area: result-ip-one;
+#input-ip {
+  grid-area: input-ip;
+  vertical-align: middle;
 }
 
-#result-ip-two{
-    grid-area: result-ip-two;
+#result-ip-one {
+  grid-area: result-ip-one;
 }
 
-.center-div{
-    height: 100%;
-    width: 100%;
-    display: flex;
+#result-ip-two {
+  grid-area: result-ip-two;
 }
 
-.center{
-    width: 100%;
-    margin: auto;
+.center-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
-.input-body{
-    margin-top: 10px;
+.center {
+  width: 100%;
+  margin: auto;
 }
 
-.inputs{
-    display: inline-block;
+.input-body {
+  margin-top: 10px;
 }
 
-.list-results{
-    width: 100%;
-    display: inline-grid;
-    justify-content: center;
+.inputs {
+  display: inline-block;
 }
 
-.list-group-item{
-    background: burlywood !important;
+.list-results {
+  width: 100%;
+  display: inline-grid;
+  justify-content: center;
 }
 
-h3  {
-    display: inline;
+.list-group-item {
+  background: burlywood !important;
 }
 
-.input-style{
-    display: inline;
-    margin-left: 10px;
+h3 {
+  display: inline;
 }
+
+.input-style {
+  display: inline;
+  margin-left: 10px;
+}
+/* input:valid {
+  background: green;
+}
+input:invalid {
+  background: red;
+} */
